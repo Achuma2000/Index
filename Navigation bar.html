@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Navigation bar</title>
+        <style type="text/css">
+        
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+
+        }
+        a:link,a:visited{
+            display:block;
+            font-weight:bold;
+            color:#ffffff;
+            background-color:deepskyblue;
+            width:120px;
+            text-align:center;
+            padding:4px;
+            text-transform:uppercase;
+            text-decoration:none;
+        }
+        a:hover,a:active{
+            background-color:darkblue;
+        }
+        li{
+            float:left;
+        }
+        span{
+            color:purple;
+        }
+        .navlist{
+            display:flex;
+        }
+        .navlist li{
+            margin:1rem;
+            list-style:none;
+        }
+        #home{
+            background-color:skyblue;
+            height:50vh;
+            text-align:center;
+            display:grid;
+            place-items:center;
+        }
+        
+        img.center{
+            display:block;
+            margin:auto;
+            background-color:skyblue;
+        }
+        #second{
+            background: #414141;
+        }
+        .container{
+            height:100vh;
+            background-color:rgb(9, 14, 27);
+            max-width:600px;
+            min-width:92%;
+            margin:auto;
+            padding:3rem;
+            display:flex;
+        }
+        .col1,.col2,.col3{
+            margin:1rem;
+
+        }
+        .col1,.col2,.col3{
+            background-color:lightsteelblue;
+            padding:1rem;
+        }
+        
+            </style>
+    
+    </head>
+    <body>
+        
+    <header>
+        <h1>
+            
+                <img class="logo" src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"height="100px"></a>
+            
+        </h1>
+        <nav>
+            <ul class="navlist">
+            <li><a href="#home">HTML</a></li>
+            <li><a href="#home">DOCUMENTS</a></li>
+            <li><a href="#home">LANGUAGE</a></li>
+            <li><a href="#IMAGE">IMAGE</a></li>
+            <li><a href="#home">HELP</a></li>
+            <li><a href="#ABOUT US">ABOUT US</a></li>
+        
+        </nav>
+        </header>
+        
+        <section id="IMAGE">
+            <img class="center"  src="https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"width="50%" height="500">
+        </section>
+
+        <section id="ABOUT US">
+            <!--  parent is the container -flexbox-->
+              <div class="container">
+            <!--      col1 ,col2 and col3 are children-->
+              <div class="col1">
+                 The code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images.                  
+              </div>
+                <div class="col2">
+                    HTML consists of a series of elements. HTML elements tell the browser how to display the content.
+            
+                </div>
+                <div class="col3">
+                    Each page contains a series of connections to other pages called hyperlinks. Every web page you see on the Internet is written using one version of HTML code or another.
+                </div>
+              </div>
+            </section>
+        
+   
+</body>
+</html>
